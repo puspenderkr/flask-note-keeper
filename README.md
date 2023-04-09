@@ -1,4 +1,4 @@
-# Flask Web App Tutorial
+# Flask Note Keeper Web App
 
 ## Setup & Installation
 
