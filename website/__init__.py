@@ -10,8 +10,9 @@ DB_NAME = "database.db"
 def create_app():
     app = Flask(__name__)
     app.config['SECRET_KEY'] = 'hjshjhdjah kjshkjdhjs'
-    app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://note_keeper_user:0Z1XWzZJHfUH4IO8TkE7JQC0oLUrh2mn@dpg-ch8u7u5gk4qeoo7psadg-a.oregon-postgres.render.com/note_keeper"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql://flask_note_keeper_user:ab7lawZWFkX9AfNDceQ5HotjcltA4dMq@dpg-cjkp16dk5scs73c2ph3g-a.oregon-postgres.render.com/flask_note_keeper"
     db.init_app(app)
+    
 
     from .views import views
     from .auth import auth
